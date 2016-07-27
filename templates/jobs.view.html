@@ -1,0 +1,20 @@
+<div class="container-fluid">
+	<div class="col-md-12 list-group">
+
+		<a ng-href="#/jobs/{{ job.id }}" ng-repeat="job in jobCtrl.jobs | filter:searchJobs" 
+		   class="list-group-item">
+			<p><b style="color:blue;">{{ job.title }}</b> - {{ job.company }} - {{ job.location }}</p>
+		</a>
+
+		<!--<a ng-href="#/jobs/{{ job.id }}" dir-paginate="job in jobCtrl.jobs | itemsPerPage: 20 | filter:searchJobs" class="list-group-item">
+			<p><b style="color:blue;">{{ job.title }}</b> - {{ job.company }} - {{ job.location }}</p>
+		</a>-->
+
+
+		<!--<div class="col-md-12" style="height:60px;"></div>-->
+	</div>
+
+	<!--<div class="col-md-12" style="bottom:0; position:fixed; background:#fff;">
+		<dir-pagination-controls class="col-md-4 col-md-offset-4"></dir-pagination-controls>
+	</div>-->
+</div>

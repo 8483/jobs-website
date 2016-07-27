@@ -1,0 +1,12 @@
+<div class="col-md-12">
+	
+	<div ng-repeat="job in jobCtrl.jobs">
+		<h1>{{ job.title }}</h1>
+		<p>{{ job.company }} - {{ job.location }}</p>
+		
+		<p>{{ job.description }}</p>
+	</div>
+	
+	<a class="btn btn-default" href ng-href="#/" role="button">Back</a>
+	
+</div>

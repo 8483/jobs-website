@@ -1,0 +1,15 @@
+<form novalidate name="AddNewForm" id="add-new-form" method="post" action="" class="col-md-4 col-md-offset-4">
+	<h2>Add new job</h2>
+	<input type="text" class="form-control" ng-model="addCtrl.job.title" placeholder="Title" required />
+	<br/>
+	<input type="text" class="form-control" ng-model="addCtrl.job.company" placeholder="Company" required />
+	<br/>
+<!--	<input type="text" class="form-control" ng-model="addCtrl.job.description" placeholder="Description" required />
+	<br/> -->
+	<input type="text" class="form-control" ng-model="addCtrl.job.location" placeholder="Location" required />
+	<br/>
+	<button class="btn btn-primary" ng-disabled="AddNewForm.$invalid || isUnchanged(job)" id="add-new-btn" ng-click="addCtrl.add_new(job)">Save!</button>
+
+<a class="btn btn-default" href ng-href="#/" role="button">Back</a>
+	
+</form>
